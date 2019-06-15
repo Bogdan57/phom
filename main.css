@@ -17,10 +17,6 @@ body * {
   display: flex;
 }
 
-.row1 {
-  display: flex;
-}
-
 .field {
   border: 1px solid;
   background-color: #ccc;
