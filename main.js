@@ -13,10 +13,11 @@ function onNumberClick(event) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+
     const button = document.querySelectorAll(SELECTORS.BUTTON).forEach (function (button) {
     button.addEventListener("click", onNumberClick);
 });
-/*function onNumberClick(e) {
+function onNumberClick(e) {
     // e - MouseEvent (содержит информацию о клике)
     if (e.target.innerHTML === 'c') {
         // Если нажата кнопка "с", то стирает все из текстового поля
@@ -30,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
         // стереть "0" и записать
         // значения кнопки в текстовое поле
         textArea.innerHTML = e.target.innerHTML;
+    } else if (e.target.innerHTML === 'ce') {
+        // Если нажата кнопка "сe", то стирает все из текстового поля
+        textArea.innerHTML = '0';
     } else {
         // Добавление значения кнопки в текстовое поле
         textArea.innerHTML += e.target.innerHTML;
@@ -37,8 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     const button = document.querySelector(SELECTORS.BUTTON);
     button.addEventListener("click", onNumberClick);
 });
 */
+    const button = document.querySelector(SELECTORS.BUTTON);
+    button.addEventListener("click", onNumberClick);
+});
+>>>>>>> d61af48f3c5e4229fa8e6f9065e3f0a3f03ce5d4
